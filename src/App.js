@@ -1,10 +1,14 @@
 import React from 'react';
 
 
+// Components
+import Navbar from "../src/components/Navbar"
+
+
 const App = () => {
   return (
     <div>
-      Zarin-Pal
+      <Navbar />
     </div>
   );
 };
