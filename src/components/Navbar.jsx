@@ -10,10 +10,11 @@ import LeftArrow from "../assets/images/arrow.svg";
 
 const Navbar = () => {
 
-    const [ open, setOpen ] = useState(false);
+    const [ open, setOpen ] = useState(true);
+    const [ close, setClose ] = useState(true);
+    const [ closeMoreMenu, setCloseMoreMenu ] = useState(true);
 
-    
-
+ 
     return (
         <div>
         <header>
@@ -23,9 +24,52 @@ const Navbar = () => {
 
             <nav>
                 <ul className={styles.HeaderUl}>
-                    <li className={styles.MoreMenu} id="show-product-menu">
-                        <a href="/#">محصولات</a>
-                        <img src={down} alt="down-arrow" />
+                    <li className={styles.MoreMenu} id={styles.ShowProductMenu}>
+                        <div>
+                            <a onClick={() => setClose(prevState => !prevState)} 
+                                href="/#">محصولات
+                            </a>
+                            
+                            <img src={down} alt="down-arrow" />
+                        </div>
+
+                            {/* For DropDowns */}
+                        <div className={!close ? styles.ProductMenu : styles.CloseProductMenu}> 
+                        
+                            <div>
+
+                                <a href="/#">
+                                    <p>درگاه‌پرداخت</p>
+                                    <p>مهندسی شده برای فروس بیش‌تر</p>
+                                </a>
+                                
+
+                                <a href="/#">
+                                    <p>زرین‌لینک</p>
+                                    <p>لینک‌پرداخت‌در‌شبکه‌های‌اجتماعی</p>
+                                </a>
+
+                                <a href="/#">
+                                    <p>زرین‌پلاس</p>
+                                    <p>ابزار‌هوشمند‌سوددهی</p>
+                                </a>
+
+                            </div>
+                            <div>
+
+                                <a href="/#">
+                                    <p>زرین‌کارت</p>
+                                    <p>طلایی‌ترین‌کارت‌بانکی</p>
+                                </a>
+
+                                <a href="/#">
+                                    <p>تسهیم</p>
+                                    <p>درگاه‌پرداخت‌اشتراکی</p>
+                                </a>
+
+                            </div>
+
+                        </div>
                     </li>
                         
                     <li>
@@ -40,9 +84,31 @@ const Navbar = () => {
                         <a href="/#">تماس‌با‌ما</a>
                     </li>
 
-                    <li className={styles.MoreMenu} id="show-more-menu">
-                        <a href="/#">بیش‌تر</a>
+                    <li className={styles.MoreMenu} id={styles.ShowMoreMenu}>
+                        <a onClick={() => setCloseMoreMenu(prevState => !prevState)}
+                         href="/#">بیش‌تر
+                        </a>
+
                         <img src={down} alt="down-arrow" />
+
+                        <ul className={!closeMoreMenu ? styles.ShowMoreMenuList : styles.CloseMoreMenu}>
+                            <li>
+                                <a href="/#">وبلاگ</a>
+                            </li>
+                            <li>
+                                <a href="/#">دریافت‌شماره‌شبا</a>
+                            </li>
+                            <li>
+                                <a href="/#">سوالات‌متداول</a>
+                            </li>
+                            <li>
+                                <a href="/#">اپلیکیشن</a>
+                            </li>
+                            <li>
+                                <a href="/#">زرین‌بین</a>
+                            </li>
+                        </ul>
+
                     </li>
 
                     <li>
@@ -53,7 +119,6 @@ const Navbar = () => {
 
             {/* Hamburger Menu */}
             <div>
-                
                 <img className={styles.HamburgerIcon}
                 src={Hamburger}
                 alt="hamburger"

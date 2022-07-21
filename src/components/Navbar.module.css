@@ -127,9 +127,82 @@ header {
     font-size: 0.85rem;
 }
 
-/* .ShowHamburgerMenu {
-    
-} */
+#ShowMoreMenu {
+    position: relative;
+}
+
+.ShowMoreMenuList {
+    position: absolute;
+    top:0;
+    left: -35px;
+    background-color: #fff;
+    border-top: 5px solid #f8e88b;
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 23px;
+    list-style: none;
+    width: 123px;
+    animation: showUp 0.35s forwards;
+}
+
+.CloseMoreMenu {
+    display: none;
+}
+
+#ShowMoreMenu li {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    color: black;
+    /* display: none; */
+}
+
+#ShowMoreMenu li:hover {
+    background-color: rgba(232, 239, 254, 0.6)
+}
+
+#ShowProductMenu {
+    position: relative;
+}
+
+.ProductMenu {
+    position: absolute;
+    top: 0;
+    left: -135px;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    width: 372px;
+    border-top: 5px solid #f8e88b;
+    border-radius: 12px;
+    padding-top: 5px;
+    margin-top: 23px;
+    animation: showUp 0.35s forwards;
+}
+
+.CloseProductMenu {
+    display: none;
+}
+
+.ProductMenu a p:first-child {
+    color: #000;
+    font-size: 0.95rem;
+}
+
+.ProductMenu a p:last-child {
+    color: #000;
+    font-size: 0.7rem;
+}
+
+.ProductMenu a {
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Animations */
 
 @keyframes fadeInDown {
     0% {
@@ -139,6 +212,15 @@ header {
     100% {
         opacity: 1;
         transform: translateY(0)
+    }
+}
+
+@keyframes showUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
