@@ -55,6 +55,95 @@ header {
     
 }
 
+.HamburgerIcon {
+    width: 27px;
+    display: none;
+}
+
+.HamburgerMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 100;
+    width: 100%;
+    font-family: YekanBakhMedium;
+    transform: translateY(-100%);
+    animation: fadeInDown 0.25s forwards;
+}
+
+.CloseHamburgerMenu {
+    display:none;
+}
+
+.CrossIcon {
+    width: 100%;
+    text-align: left;
+    padding: 25px 0;
+}
+
+.CrossIcon img {
+    width: 20px;
+    margin-left: 30px;
+}
+
+.HamburgerItems {
+    padding: 10px 30px;
+}
+
+.HamburgerItems ul {
+    list-style: none;
+}
+
+.HamburgerItems a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 3px 0;
+}
+
+.HamburgerItems div {
+    height: 1px;
+    background-color: #dfe1e4;
+    width: 90%;
+    margin: 8px 0;
+}
+
+.MoreItems {
+    display: flex;
+    background-color: #eee;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.MoreItems img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.MoreItems a {
+    text-decoration: none;
+    color: #28457b;
+    font-size: 0.85rem;
+}
+
+/* .ShowHamburgerMenu {
+    
+} */
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+
+
 /* Media Queries */
 
 @media (max-width: 1200px) {
@@ -86,6 +175,9 @@ header {
     .header {
         width: auto;
         padding: 10px 8px;
+    }
+    .HamburgerIcon {
+        display: block
     }
 }
 
