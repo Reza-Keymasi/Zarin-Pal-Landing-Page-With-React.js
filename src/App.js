@@ -2,13 +2,14 @@ import React from 'react';
 
 
 // Components
-import Navbar from "../src/components/Navbar"
+import Landing from "./components/Landing.jsx";
+
 
 
 const App = () => {
   return (
     <div>
-      <Navbar />
+      <Landing />
     </div>
   );
 };

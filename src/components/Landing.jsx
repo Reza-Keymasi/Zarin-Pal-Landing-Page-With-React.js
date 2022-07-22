@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import styles from "./Navbar.module.css";
+import styles from "./Landing.module.css";
+
+// components
+import Banner from "./Banner.jsx"
 
 // Images
 import logo from "../assets/images/logo-white.svg";
@@ -8,7 +11,7 @@ import Hamburger from "../assets/images/hamburger.svg";
 import Cross from "../assets/images/cross.svg";
 import LeftArrow from "../assets/images/arrow.svg";
 
-const Navbar = () => {
+const Landing = () => {
 
     const [ open, setOpen ] = useState(true);
     const [ close, setClose ] = useState(true);
@@ -17,7 +20,7 @@ const Navbar = () => {
  
     return (
         <div>
-        <header>
+            <header>
             <div>
                 <img className={styles.Logo} src={logo} alt="logo"/>
             </div>
@@ -164,13 +167,12 @@ const Navbar = () => {
                 </div>
             </div>
 
-        </header>
-        <div style={{width:"100vw", height:"2000px", backgroundColor:"red"}}>
-            
-        </div>
+            </header>
+        
+            <Banner />
         </div>
         
     );
 };
 
-export default Navbar;
+export default Landing;
