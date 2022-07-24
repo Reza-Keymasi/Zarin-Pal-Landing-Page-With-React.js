@@ -1,0 +1,122 @@
+.OnlinePayment {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.OnlinePayment img {
+    width: 450px;
+    height: 480px;
+}
+
+.SectionText {
+    margin: 30px 0;
+    width: 530px;
+}
+
+.SectionText h2 {
+    font-family: YekanBakhMedium;
+    color: #747480;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 20px 0 5px;
+}
+
+.SectionText h3 {
+    color: #303030;
+    font-family: YekanBakhHeavy;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 5px;
+}
+
+.SectionText p {
+    color: #303030;
+    font-family: YekanBakhMedium;
+    text-align:justify;
+    line-height: 40px;
+    border-bottom: 1px solid #dfe1e4;
+    padding-bottom: 20px;
+    margin-top: 16px;
+}
+
+.SectionLinks {
+    display: flex;
+    margin-top: 40px;
+}
+
+.SectionLinks .FirstButton {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: iranyekanwebmedium;
+    color: #000;
+    background-color: #ffd900;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.SectionLinks .SecondButton {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: iranyekanwebmedium;
+    color: #28457b;
+    background-color: rgba(232, 239, 254, 0.7);
+    padding: 6px 14px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.SectionLinks .SecondButton img {
+    width: 18px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .OnlinePayment {
+        width: 940px;
+    }
+}
+
+@media (max-width: 990px) {
+    .OnlinePayment {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .SectionText {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .SectionText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .OnlinePayment img {
+        width: 460px;
+        height: 480px;
+    }
+}
+
+@media (max-width: 575px) {
+    .OnlinePayment .SectionImage {
+        display: none;
+    }
+    .SectionText {
+        width: 80%;
+        padding: 0 10px;
+    }
+    .SectionText h3 {
+        font-size: 1.5rem;
+    }
+}

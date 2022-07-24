@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import styles from "./Landing.module.css";
 
 // components
-import Banner from "./Banner.jsx"
+import Banner from "./Banner.jsx";
+import Cards from "./Cards.jsx";
 
 // Images
 import logo from "../assets/images/logo-white.svg";
@@ -170,6 +171,9 @@ const Landing = () => {
             </header>
         
             <Banner />
+
+            <Cards />
+
         </div>
         
     );
