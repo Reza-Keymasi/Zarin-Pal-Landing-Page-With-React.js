@@ -15,12 +15,27 @@ import down from "../assets/images/down-arrow-svgrepo-com.svg";
 import Hamburger from "../assets/images/hamburger.svg";
 import Cross from "../assets/images/cross.svg";
 import LeftArrow from "../assets/images/arrow.svg";
+import Bell from "../assets/images/bell.svg";
 
 const Landing = () => {
 
     const [ open, setOpen ] = useState(true);
     const [ close, setClose ] = useState(true);
     const [ closeMoreMenu, setCloseMoreMenu ] = useState(true);
+
+    const style = {
+        backgroundColor:"#2e82ff",
+        width: "fit-content",
+        padding: "7px 7px 0",
+        borderRadius: "50%",
+        position: "fixed",
+        bottom: "20px",
+        left: "20px"
+    }
+
+    const ImgStyle = {
+        width: "40px"
+    }
 
  
     return (
@@ -185,6 +200,10 @@ const Landing = () => {
             <Support />
 
             <Footer />
+
+            <div style={style}>
+                <img style={ImgStyle} src={Bell} alt="bell" />
+            </div>
 
         </div>
         
