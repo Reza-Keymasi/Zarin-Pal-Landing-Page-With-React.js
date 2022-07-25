@@ -6,6 +6,7 @@ import Banner from "./Banner.jsx";
 import Cards from "./Cards.jsx";
 import ZarinPalOptions from "./ZarinPalOptions.jsx";
 import StartBox from "./StartBox.jsx";
+import Support from "./Support.jsx";
 
 // Images
 import logo from "../assets/images/logo-white.svg";
@@ -179,6 +180,8 @@ const Landing = () => {
             <ZarinPalOptions />
             
             <StartBox />
+
+            <Support />
 
         </div>
         
