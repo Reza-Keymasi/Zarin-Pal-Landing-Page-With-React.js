@@ -17,8 +17,11 @@
 .BannerText p {
     color: #fff;
     font-size: 1.5rem;
+    font-family: YekanBakhMedium;
     margin: 25px 0;
     line-height: 2.5rem;
+    z-index: 1;
+    position: relative;
 }
 
 .BannerImage img {

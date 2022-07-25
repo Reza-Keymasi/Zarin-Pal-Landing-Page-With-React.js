@@ -9,6 +9,7 @@ header {
     position: sticky;
     top: 0;
     backdrop-filter: blur(20px);
+    z-index: 1001;
     transition: all 0.3s case
 }
 
