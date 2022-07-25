@@ -5,6 +5,7 @@ import styles from "./Landing.module.css";
 import Banner from "./Banner.jsx";
 import Cards from "./Cards.jsx";
 import ZarinPalOptions from "./ZarinPalOptions.jsx";
+import StartBox from "./StartBox.jsx";
 
 // Images
 import logo from "../assets/images/logo-white.svg";
@@ -176,6 +177,8 @@ const Landing = () => {
             <Cards />
 
             <ZarinPalOptions />
+            
+            <StartBox />
 
         </div>
         
