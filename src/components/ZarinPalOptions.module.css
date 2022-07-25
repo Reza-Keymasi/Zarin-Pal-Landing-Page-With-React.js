@@ -1,0 +1,137 @@
+.Attributes {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Definition {
+    width: 35%;
+    margin-top: 50px;
+}
+
+.Items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    padding: 30px;
+}
+
+.Items img {
+    width: 60px;
+    height: 60px;
+}
+
+.Item {
+    padding: 18px 25px 20px 0;
+}
+
+.Item div {
+    display: flex;
+    align-items: center;
+}
+
+.Items h4 {
+    font-size: 1.5rem;
+    font-family: YekanBakhHeavy;
+    margin-right: 20px;
+}
+
+.Items p {
+    margin: 20px 0 20px 10px;
+    font-size: 1rem;
+    font-family: YekanBakhMedium;
+    color: #303030;
+    line-height: 36px;
+}
+
+.Definition h3 {
+    font-family: YekanBakhHeavy;
+    font-size: 2rem;
+} 
+
+.Definition p {
+    width: 85%;
+    margin-top: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+}
+
+#FirstItem {
+    border-left: 1px solid #e0e4e7;
+}
+
+#SecondItem {
+    border-bottom: 1px solid #e0e4e7;
+}
+
+#ThirdItem {
+    border-top: 1px solid #e0e4e7;
+}
+
+#FourthItem {
+    border-right: 1px solid #e0e4e7;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .Attributes {
+        width: 924px;
+        padding: 0 8px;
+        flex-direction: column;
+    }
+    .Definition {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .Definition p {
+        margin-top: 30px; width: 100%
+    }
+    #FirstItem,
+    #SecondItem,
+    #ThirdItem,
+    #FourthItem {
+        border: none;
+    }
+    .Items {
+        width: 90%;padding: 30px;
+    }
+    .Item {
+        padding: 18px 0 20px 50px;
+    }
+}
+
+@media (max-width: 990px) {
+    .Attributes {
+        width: auto;
+        padding: 0 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Definition {
+        text-align: center;
+        margin-top: 90px;
+    }
+    .Definition h3 {
+        font-size: 1.6rem;
+    }
+    .Items {
+        width: 100%;
+        padding: 50px 0;
+    }
+    .Item {
+        padding: 18px 20px 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .Items {
+        padding: 50px 0;
+        grid-template-columns: 1fr;
+    }
+    .Item {
+        padding: 18px 0;
+    }
+}
