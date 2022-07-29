@@ -2,8 +2,7 @@ import React from 'react';
 
 
 // Components
-import Landing from "./components/landingPage/Landing";
-
+import Landing from "./components/landingPage/Landing.jsx";
 
 
 const App = () => {
