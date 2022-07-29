@@ -2,9 +2,9 @@ import React from 'react';
 import styles from "./ZarinPalOptions.module.css";
 
 // Images
-import VerifiedIcon from "../assets/images/verifiedIcon.svg";
-import Splite from "../assets/images/splite.svg";
-import Support from "../assets/images/support.svg";
+import VerifiedIcon from "../../assets/images/verifiedIcon.svg";
+import Splite from "../../assets/images/splite.svg";
+import Support from "../../assets/images/support.svg";
 
 const ZarinPalOptions = () => {
     return (

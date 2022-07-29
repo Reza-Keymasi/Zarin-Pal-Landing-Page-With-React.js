@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./Support.module.css";
 
 // images
-import Arrow from "../assets/images/arrow.svg";
+import Arrow from "../../assets/images/arrow.svg";
 
 const Support = () => {
     return (

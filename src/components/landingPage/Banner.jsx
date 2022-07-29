@@ -2,8 +2,8 @@ import React from 'react';
 import styles from "./Banner.module.css";
 
 // images
-import Home from "../assets/images/home.svg";
-import DownArrow from "../assets/images/down-arrow-svgrepo-com.svg";
+import Home from "../../assets/images/home.svg";
+import DownArrow from "../../assets/images/down-arrow-svgrepo-com.svg";
 
 const Banner = () => {
     return (

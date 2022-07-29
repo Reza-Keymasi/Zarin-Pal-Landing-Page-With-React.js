@@ -2,7 +2,7 @@ import React from 'react';
 
 
 // Components
-import Landing from "./components/Landing.jsx";
+import Landing from "./components/landingPage/Landing";
 
 
 

@@ -10,12 +10,12 @@ import Support from "./Support.jsx";
 import Footer from "./Footer.jsx";
 
 // Images
-import logo from "../assets/images/logo-white.svg";
-import down from "../assets/images/down-arrow-svgrepo-com.svg";
-import Hamburger from "../assets/images/hamburger.svg";
-import Cross from "../assets/images/cross.svg";
-import LeftArrow from "../assets/images/arrow.svg";
-import Bell from "../assets/images/bell.svg";
+import logo from "../../assets/images/logo-white.svg";
+import down from "../../assets/images/down-arrow-svgrepo-com.svg";
+import Hamburger from "../../assets/images/hamburger.svg";
+import Cross from "../../assets/images/cross.svg";
+import LeftArrow from "../../assets/images/arrow.svg";
+import Bell from "../../assets/images/bell.svg";
 
 const Landing = () => {
 

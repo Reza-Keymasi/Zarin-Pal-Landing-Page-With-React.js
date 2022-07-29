@@ -2,11 +2,11 @@ import React from 'react';
 import styles from "./Footer.module.css";
 
 // images
-import Instagram from "../assets/images/instagram.svg";
-import Twitter from "../assets/images/twitter.svg";
-import Telegram from "../assets/images/telegram.svg";
-import Linkedin from "../assets/images/linkedin.svg";
-import Aparat from "../assets/images/aparat.svg";
+import Instagram from "../../assets/images/instagram.svg";
+import Twitter from "../../assets/images/twitter.svg";
+import Telegram from "../../assets/images/telegram.svg";
+import Linkedin from "../../assets/images/linkedin.svg";
+import Aparat from "../../assets/images/aparat.svg";
 
 const Footer = () => {
     return (

@@ -3,12 +3,12 @@ import React from 'react';
 import styles from "./Cards.module.css";
 
 // images
-import PG from "../assets/images/pg.svg";
-import Arrow from "../assets/images/arrow.svg";
-import SocialPayment from "../assets/images/social-image.svg";
-import ZarinCard from "../assets/images/zarincard.svg";
-import PayOut from "../assets/images/payout.svg";
-import ZarinPlus from "../assets/images/zarinplus.svg";
+import PG from "../../assets/images/pg.svg";
+import Arrow from "../../assets/images/arrow.svg";
+import SocialPayment from "../../assets/images/social-image.svg";
+import ZarinCard from "../../assets/images/zarincard.svg";
+import PayOut from "../../assets/images/payout.svg";
+import ZarinPlus from "../../assets/images/zarinplus.svg";
 
 const Cards = () => {
     return (
