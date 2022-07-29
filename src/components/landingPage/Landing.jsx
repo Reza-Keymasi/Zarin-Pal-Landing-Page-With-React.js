@@ -1,13 +1,8 @@
 import React from 'react';
 
 // components
-import Navbar from "./Navbar.jsx"
-import Banner from "./Banner.jsx";
-import Cards from "./Cards.jsx";
-import ZarinPalOptions from "./ZarinPalOptions.jsx";
-import StartBox from "./StartBox.jsx";
-import Support from "./Support.jsx";
-import Footer from "./Footer.jsx";
+import { Navbar, Banner, Cards, ZarinPalOptions, StartBox, Support, Footer,}  from "./Index.jsx"
+
 
 // Images
 import Bell from "../../assets/images/bell.svg";
