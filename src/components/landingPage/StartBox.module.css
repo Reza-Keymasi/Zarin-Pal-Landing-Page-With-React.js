@@ -46,7 +46,7 @@
 @media (max-width: 990px) {
     .StartBox {
         margin: 0 38px;
-        width: calc(100% 76px)
+        width: calc(100% - 76px)
     }
 }
 

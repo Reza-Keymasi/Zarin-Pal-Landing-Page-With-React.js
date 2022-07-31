@@ -1,5 +1,6 @@
 import React,  { useState } from 'react';
 import styles from "./Navbar.module.css";
+import { Link } from "react-router-dom";
 
 // images
 import logo from "../../assets/images/logo-white.svg";
@@ -7,6 +8,9 @@ import down from "../../assets/images/down-arrow-svgrepo-com.svg";
 import Hamburger from "../../assets/images/hamburger.svg";
 import Cross from "../../assets/images/cross.svg";
 import LeftArrow from "../../assets/images/arrow.svg";
+
+// Products
+import PaymentGateWay from "../products/PaymentGateway.jsx"
 
 const Navbar = () => {
 
@@ -39,10 +43,10 @@ const Navbar = () => {
                     
                         <div>
 
-                            <a href="/#">
+                            <Link to="/payment-gateway">
                                 <p>درگاه‌پرداخت</p>
                                 <p>مهندسی شده برای فروس بیش‌تر</p>
-                            </a>
+                            </Link>
                             
 
                             <a href="/#">

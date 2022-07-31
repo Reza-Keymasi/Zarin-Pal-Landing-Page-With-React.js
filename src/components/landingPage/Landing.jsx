@@ -1,7 +1,7 @@
 import React from 'react';
 
 // components
-import { Navbar, Banner, Cards, ZarinPalOptions, StartBox, Support, Footer,}  from "./Index.jsx"
+import { Navbar, Banner, Cards, ZarinPalOptions, StartBox, Support, Footer}  from "./Index.jsx"
 
 
 // Images

@@ -1,0 +1,339 @@
+.PaymentGateway {
+    width: 1050px;
+    padding: 124px 60px 80px;
+    background-color: #f1f5fe;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.PaymentGatewayText h1 {
+    font-family: YekanBakhHeavy;
+    font-size: 2rem;
+    /* color: #fff; */
+}
+
+.PaymentGatewayText p span {
+    /* color: #fff; */
+    font-size: 1rem;
+    font-family: YekanBakhMedium;
+    margin: 25px 0;
+    line-height: 40px;
+    z-index: 1;
+    position: relative;
+}
+
+.PaymentGatewayImage img {
+    width: 500px;
+}
+
+.PaymentGatewayButtons {
+    margin-top: 60px;
+}
+
+.PaymentGatewayLink {
+    font-size: 1rem;
+    font-family: YekanBakhBold;
+    color: #000;
+    background-color: #ffd900;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.GoDown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 58px;
+}
+
+.GoDown div {
+    background-image: url(../../assets/images/arrowbottom.svg);
+    width: 164px;
+    height: 78px;
+}
+
+.GoDown img {
+    width: 15px;
+    position: relative;
+    top: -60px;
+}
+
+.Attributes {
+    width: 1170px;
+    margin: auto;
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+.Title {
+    width: 35%;
+    margin-top: 50px;
+}
+
+.Title h2 {
+    font-size: 2rem;
+    font-family: YekanBakhHeavy;
+}
+
+.Advantages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    padding: 30px;
+}
+
+.Advantages h4 {
+    font-size: 1.5rem;
+    font-family: YekanBakhMedium;
+    margin-right: 20px;
+}
+
+.Advantages p {
+    margin: 20px 0 20px 10px;
+    font-size: 1rem;
+    font-family: YekanBakhMedium;
+    color: #303030;
+    line-height: 36px;
+    max-width: 317px;
+}
+
+.Advantages img {
+    width: 60px;
+    height: 60px;
+}
+
+
+.Advantage {
+    padding: 18px 25px 20px 0;
+}
+
+.Advantage div {
+    display: flex;
+    align-items: center;
+}
+
+.SectionContent {
+    width: 1170px;
+    display: flex;
+    background-color: #fbf6f1;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.TariffPayment {
+    padding: 45px 60px 25px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.TariffPayment h2 {
+    color: #303030;
+    font-weight: 900;
+    font-family: YekanBakhHeavy;
+    text-align: right;
+    line-height: 40px;
+    margin-bottom: -2px;
+}
+
+.TariffPayment p {
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-family:YekanBakhMedium;
+    line-height: 40px;
+    text-align: justify;
+    color: #303030;
+    position: relative;
+    z-index: 1;
+    /* width: 549px; */
+}
+
+.Link {
+    width: 139px;
+}
+
+.Button {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: iranyekanwebmedium;
+    color: #28457b;
+    background-color: rgba(232, 239, 254, 0.7);
+    padding: 6px 14px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* .LogoImage {
+    position: relative;
+    align-items: left;
+} */
+
+.Logo {
+    width: 563px;
+    height: 334px;
+    background-size: cover;
+    margin-right: -180px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .PaymentGateway {
+        width: 900px;
+        padding: 60px 40px 120px;
+    }
+    .PaymentGatewayImage img {
+        width: 430px;
+    }
+    .Attributes {
+        width: 924px;
+        padding: 0 8px;
+        flex-direction: column;
+    }
+
+    .Advantages {
+        width: 90%;
+        padding: 30px;
+        margin: auto;
+        grid-template-columns: 1fr 1fr;
+    }
+    .Advantage {
+        padding: 18px 0 20px 50px;
+    }
+
+    .Title {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .Title h2 {
+        margin-top: 30px;
+        width: 100%
+    }
+    .SectionContent {
+        width: 940px;
+    }
+    .TariffPayment p{
+        width: 330px;
+    }
+    .Logo {
+        margin-right: 23px;
+        
+    }
+}
+
+@media ( max-width:990px ) {
+    .PaymentGateway {
+        width: auto;
+        padding: 40px 40px 85px;
+        margin-left: 35px;
+    }
+    .PaymentGatewayImage img {
+        display: none;
+    }
+    .PaymentGatewayText {
+        text-align: center;
+    }
+    .PaymentGatewayText p {
+        margin: 5px 0;
+        font-size: 1rem;
+    }
+    .PaymentGatewayButtons {
+        margin-top: 40px;
+    }
+    .Attributes {
+        width: auto;
+        padding: 0 35px;
+    }
+    .SectionContent {
+        margin: 0 38px;
+        width: calc(100% - 76px);
+    }
+    .Logo {
+        display: none;
+    }
+    /* .LogoImage{
+        display: none;
+    } */
+    .TariffPayment p {
+        width: 90%
+    }
+}
+
+@media (max-width: 768px) {
+    .PaymentGateway {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .Advantages {
+        width: 100%;
+        border: none;
+        padding: 50px 0;
+        margin: auto;
+    }
+    .Advantages p {
+        font-size: 19px;
+    }
+    .Advantage {
+        padding: 18px 20px 20px;
+    }
+    .Title {
+        margin-top: 90px;
+    }
+    .Title h2 {
+        font-size: 1.6rem;
+    }
+    .SectionContent{
+        margin: 0 8px;
+        width: calc(100% - 16px);
+    }
+    .TariffPayment p {
+       width: 90%;
+    }
+    .TariffPayment h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .PaymentGateway {
+        padding: 80px 40px;
+        }
+    .PaymentGatewayText h3 {
+        font-size: 1.2rem;
+        text-align: right;
+    }
+    .PaymentGatewayText p {
+        text-align: justify;
+    }
+    .Advantages {
+        padding: 50px 0;
+        grid-template-columns: 1fr;
+    }
+    .Advantage {
+        padding: 18px 0;
+    }
+    .TariffPayment p {
+        width: 90%;
+        font-size: 16px;
+    }
+    .TariffPayment h2 {
+        font-size: 24px;
+    }
+    .TariffPayment a {
+        width: 80%;
+        margin-bottom: 30px;
+        padding: 7px 28px;
+    }
+}
