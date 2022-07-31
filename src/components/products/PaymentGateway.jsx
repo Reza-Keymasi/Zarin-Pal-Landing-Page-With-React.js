@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./PaymentGateway.module.css";
 
 // components
-import { Navbar, Support, Footer, StartBox } from "../landingPage/Index.jsx"
+import { Navbar } from "../landingPage/Index.jsx"
 
 
 // images
@@ -221,11 +221,6 @@ const PaymentGateway = () => {
                 </div>
             </div>
 
-            {/* <StartBox /> */}
-
-            {/* <Support /> */}
-
-            {/* <Footer /> */}
             
         </div>
     );

@@ -207,6 +207,12 @@
     padding: 10px 10px 0;
 }
 
+.Advantage h4 span {
+    font-size: 13px;
+    font-family: Roboto-Regular;
+    font-weight: 600;
+}
+
 /* Media Queries */
 
 @media (max-width: 1200px) {
