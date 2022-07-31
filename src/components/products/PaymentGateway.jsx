@@ -16,6 +16,10 @@ import Secure from "../../assets/images/security.svg";
 import Plugin from "../../assets/images/plugin.svg";
 import Logo from "../../assets/images/tashimLogo.svg";
 import Arrow from "../../assets/images/arrow.svg";
+import Store from "../../assets/images/storefront.svg";
+import Vod from "../../assets/images/vod.svg";
+import Games from "../../assets/images/games.svg";
+
 
 
 const PaymentGateway = () => {
@@ -145,6 +149,76 @@ const PaymentGateway = () => {
 
                 {/* <div className={styles.LogoImage}>
                 </div> */}
+            </div>
+
+            <div className={styles.Attributes}>
+                <div className={styles.TitleTwo}>
+                    <h2>
+                        درگاه‌پرداخت‌زرین‌پال،برای‌چه‌کسانی‌وچه‌کسب‌و‌کارهایی‌مناسب‌است؟
+                    </h2>
+                </div>
+
+                <div className={styles.Advantages}>
+                    
+                    <div className={styles.Advantage}>
+                        <div> 
+                            <span className={styles.Pic}>
+                                <img  src={Store} alt="online-store" />
+                            </span>
+                            <h4>
+                                کسب‌و‌کارهای‌اینترنتی
+                            </h4>
+                        </div>
+                    </div>
+                    <div className={styles.Advantage}>
+                        <div>  
+                            <img src={Splite} alt="crpto-services" />
+                            <h4>
+                                ارائه‌دهندگان خدمات رمزارز
+                            </h4>
+                        </div>
+                    </div>
+                    <div className={styles.Advantage}>
+                        <div>
+                            <span className={styles.Pic}>
+                                <img src={Vod} alt="movie-platforms" />
+                            </span>
+                            <h4>
+                                پلتفرم‌های نمایش فیلم و سریال
+                                <span>(vod)</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div className={styles.Advantage}>
+                        <div>
+                            <span className={styles.Pic}>
+                                <img src={Store} alt="store" />
+                            </span>
+                            <h4>
+                                بازارگاه‌ها
+                                <span>(Marketplace)</span>
+                            </h4> 
+                        </div>
+                    </div>
+                    <div className={styles.Advantage}>
+                        <div>    
+                            <span className={styles.Pic}>
+                            <img src={Games} alt="games" />
+                            </span>
+                            <h4>
+                                بازی‌سازان
+                            </h4>
+                        </div>
+                    </div>
+                    <div className={styles.Advantage}>
+                        <div>    
+                            <img src={Plugin} alt="serve" />
+                            <h4>
+                                سرویس‌دهنده‌ها
+                            </h4>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {/* <StartBox /> */}
