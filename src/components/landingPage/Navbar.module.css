@@ -18,7 +18,9 @@ header {
 }
 
 .HeaderUl {
+    width: 100%;
     display: flex;
+    margin-right: 350px;
     list-style: none;
 }
 
@@ -231,6 +233,9 @@ header {
 @media (max-width: 1200px) {
     header {
         width: 940px;
+    }
+    .HeaderUl {
+        margin-right: 120px;
     }
 }
 

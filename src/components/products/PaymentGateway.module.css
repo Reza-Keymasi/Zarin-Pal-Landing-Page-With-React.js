@@ -26,6 +26,7 @@
 
 .PaymentGatewayImage img {
     width: 500px;
+    height: 450px;
 }
 
 .PaymentGatewayButtons {
@@ -68,21 +69,21 @@
 
 .Attributes {
     width: 1170px;
-    /* margin: auto; */
-    /* display: flex; */
     justify-content: space-between;
+    padding: 124px 60px 80px;
+    margin: 0 auto;
 }
 
 .Title {
     width: 35%;
-    margin-right: 30px;
+    /* margin-right: 30px; */
 
 }
 
 .Title h2 {
     font-size: 2rem;
     font-family: YekanBakhHeavy;
-    padding: 0 30px 0;
+    padding: 0 0 20px;
 }
 
 .Advantages {
@@ -192,7 +193,7 @@
 .TitleTwo h2 {
     font-size: 2rem;
     font-family: YekanBakhHeavy;
-    padding: 60px 60px 30px;
+    padding: 0 0 20px;
 }
 
 .Pic {
@@ -217,15 +218,16 @@
 
 @media (max-width: 1200px) {
     .PaymentGateway {
-        width: 900px;
+        width: 940px;
         padding: 60px 40px 120px;
     }
     .PaymentGatewayImage img {
         width: 430px;
     }
     .Attributes {
-        width: 924px;
-        padding: 0 8px;
+        width: 940px;
+        margin: 0px auto;
+        /* padding: 60px 40px 120px; */
         flex-direction: column;
     }
 
@@ -239,12 +241,13 @@
         padding: 18px 0 20px 50px;
     }
 
-    .Title {
+    .Title, .TitleTwo {
         width: 100%;
-        margin-top: 40px;
+        margin: auto;
+        /* margin-top: 40px; */
     }
     .Title h2, .TitleTwo h2 {
-        margin-top: 30px;
+        /* margin-top: 30px; */
         width: 100%
     }
     .SectionContent {
@@ -294,6 +297,9 @@
     } */
     .TariffPayment p {
         width: 90%
+    }
+    .TitleTwo {
+        margin-top: 100px;
     }
 }
 

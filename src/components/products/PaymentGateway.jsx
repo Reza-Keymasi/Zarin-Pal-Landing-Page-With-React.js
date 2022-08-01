@@ -6,7 +6,7 @@ import { Navbar } from "../landingPage/Index.jsx"
 
 
 // images
-import PG from "../../assets/images/pg.svg";
+import Pay from "../../assets/images/pay.svg";
 import DownArrow from "../../assets/images/down-arrow-svgrepo-com.svg";
 import VerifiedIcon from "../../assets/images/verifiedIcon.svg";
 import Splite from "../../assets/images/splite.svg";
@@ -42,9 +42,9 @@ const PaymentGateway = () => {
                     </div>
                 </div>
 
-                    <div className={styles.PaymentGatewayImage}>
-                        <img src={PG} alt="home" />
-                    </div>
+                <div className={styles.PaymentGatewayImage}>
+                    <img src={Pay} alt="home" />
+                </div>
             </div>
             <div className={styles.GoDown}>
                 <div></div>
