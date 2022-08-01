@@ -17,10 +17,11 @@ header {
     margin: 11px 28px;
 }
 
+
 .HeaderUl {
     width: 100%;
     display: flex;
-    margin-right: 350px;
+    /* margin-right: 350px; */
     list-style: none;
 }
 

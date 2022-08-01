@@ -9,8 +9,7 @@ import Hamburger from "../../assets/images/hamburger.svg";
 import Cross from "../../assets/images/cross.svg";
 import LeftArrow from "../../assets/images/arrow.svg";
 
-// Products
-import PaymentGateWay from "../products/PaymentGateway.jsx"
+
 
 const Navbar = () => {
 
@@ -49,10 +48,10 @@ const Navbar = () => {
                             </Link>
                             
 
-                            <a href="/#">
+                            <Link to="/zarinlink">
                                 <p>زرین‌لینک</p>
                                 <p>لینک‌پرداخت‌در‌شبکه‌های‌اجتماعی</p>
-                            </a>
+                            </Link>
 
                             <a href="/#">
                                 <p>زرین‌پلاس</p>

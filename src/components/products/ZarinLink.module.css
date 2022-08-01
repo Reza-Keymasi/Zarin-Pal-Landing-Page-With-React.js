@@ -1,0 +1,111 @@
+.ZarinLink {
+    display: flex;
+    justify-content: space-between;
+    width: 1050px;
+    background-color: #f1f6fe;
+    border-radius: 20px;
+    padding: 124px 60px 80px;
+    margin: 20px auto;
+}
+
+
+.ZarinLinkText h3 {
+    font-family: YekanBakhHeavy;
+    font-size: 2rem;
+}
+
+.ZarinLinkText p {
+    font-family: YekanBakhMedium;
+    font-size: 1rem;
+    margin: 25px 0;
+    line-height: 40px;
+    position: relative;
+}
+
+.ZarinLinkButton {
+    margin-top: 60px;
+}
+
+.ZarinLinkButton a {
+    font-size: 1rem;
+    font-family: YekanBakhBold;
+    color: #000;
+    background-color: #ffd900;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.ZarinLinkPic {
+    width: 100%;
+    height: 450px;
+}
+
+.GoDown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 58px;
+}
+
+.GoDown div {
+    background-image: url(../../assets/images/arrowbottom.svg);
+    width: 164px;
+    height: 78px;
+}
+
+.GoDown img {
+    width: 15px;
+    position: relative;
+    top: -60px;
+}
+
+
+
+
+/* Media Queries */
+
+@media (max-Width: 1200px) {
+    .ZarinLink {
+        width: 900px;
+        padding: 60px 40px 120px;
+    }
+    .ZarinLinkPic img {
+        width: 430px;
+    }
+}
+
+@media (max-Width: 990px) {
+    .ZarinLink{
+        width: auto;
+        /* margin: 20px 40px; */
+        margin-left: 35px;
+        margin-right:35px;
+
+    }
+    .ZarinLinkText {
+        width: 98%;
+    }
+    
+    .ZarinLinkPic {
+        display: none;
+    }
+}
+
+@media (max-Width: 768px) {
+    .ZarinLink {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-Width: 575px) {
+    .ZarinLink {
+        
+    }
+}

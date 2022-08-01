@@ -266,7 +266,7 @@
     .PaymentGateway {
         width: auto;
         padding: 40px 40px 85px;
-        margin-left: 35px;
+        /* margin-left: 35px; */
     }
     .PaymentGatewayImage img {
         display: none;
@@ -342,7 +342,7 @@
     .PaymentGateway {
         padding: 80px 40px;
         }
-    .PaymentGatewayText h3 {
+    .PaymentGatewayText h1 {
         font-size: 1.2rem;
         text-align: right;
     }
@@ -356,16 +356,25 @@
     .Advantage {
         padding: 18px 0;
     }
+    .Advantage h4 {
+        font-size: 0.6rem
+    }
     .TariffPayment p {
-        width: 90%;
+        width: 70%;
         font-size: 16px;
     }
     .TariffPayment h2 {
-        font-size: 24px;
+        width: 50%;
+        font-size: 20px;
     }
     .TariffPayment a {
         width: 80%;
         margin-bottom: 30px;
         padding: 7px 28px;
+    }
+    .Title h2, .TitleTwo h2 {
+        width: 70%;
+        font-size: 1rem;
+        font-weight:500
     }
 }
