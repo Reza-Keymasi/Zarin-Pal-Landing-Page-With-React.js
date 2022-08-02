@@ -26,6 +26,7 @@
 
 .BannerImage img {
     width: 500px;
+    /* padding:0 20px 0; */
 }
 
 .BannerButtons {
