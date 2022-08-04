@@ -7,7 +7,9 @@
     display: flex;
     justify-content: space-between;
 }
-
+.BannerText{
+    padding: 100px 60px 80px;
+}
 .BannerText h3 {
     font-family: YekanBakhHeavy;
     font-size: 2rem;
@@ -16,21 +18,24 @@
 
 .BannerText p {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: YekanBakhMedium;
     margin: 25px 0;
     line-height: 2.5rem;
+    text-align: justify;
     z-index: 1;
     position: relative;
 }
 
 .BannerImage img {
     width: 500px;
+    padding: 100px 0 15px 80px
     /* padding:0 20px 0; */
 }
 
 .BannerButtons {
     margin-top: 60px;
+    /* padding-right: 60px */
 }
 
 .Register {
@@ -82,8 +87,9 @@
 
 @media (max-width: 1200px) {
     .Banner {
-        width: 900px;
-        padding: 60px 40px 120px;
+        width: 940px;
+        padding-left: 0;
+        padding-right: 0;
     }
     .BannerImage img {
         width: 430px;
@@ -91,11 +97,12 @@
 }
 
 @media ( max-width:990px ) {
+    main{
+        padding-left: 10px;
+    }
     .Banner {
         width: auto;
-        padding: 40px 40px 85px;
-        margin-left: 35px;
-
+        padding-right: 10px;
     }
     .BannerImage img {
         display: none;
@@ -104,7 +111,7 @@
         text-align: center;
     }
     .BannerText p {
-        margin: 5px 0;
+        margin-top: 5px;
         font-size: 1rem;
     }
     .BannerButtons {

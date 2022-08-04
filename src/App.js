@@ -10,7 +10,8 @@ import {Support, Footer, StartBox } from "./components/landingPage/Index"
 
 // Products
 import PaymentGateway from "./components/products/PaymentGateway.jsx";
-import ZarinLink from "./components/products/ZarinLink";
+import ZarinLink from "./components/products/ZarinLink.jsx";
+import ZarinPlus from "./components/products/ZarinPlus.jsx";
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/" element={<Landing />} />
         <Route path="/payment-gateway" element={<PaymentGateway />} />
         <Route path="/zarinlink" element={<ZarinLink />} />
+        <Route path="/zarinplus" element={<ZarinPlus />} />
       </Routes>
 
       <StartBox />

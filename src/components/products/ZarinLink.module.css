@@ -1,13 +1,15 @@
 .ZarinLink {
     display: flex;
     justify-content: space-between;
-    width: 1050px;
+    width: 1170px;
     background-color: #f1f6fe;
     border-radius: 20px;
-    padding: 124px 60px 80px;
     margin: 20px auto;
 }
 
+.ZarinLinkText {
+    padding: 124px 60px 80px;
+}
 
 .ZarinLinkText h3 {
     font-family: YekanBakhHeavy;
@@ -65,23 +67,28 @@
     top: -60px;
 }
 
-.Title {
-    width: 35%;
-    /* margin: 20px auto; */
+article {
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+
 }
+
 
 .Title h2 {
     font-family: YekanBakhHeavy;
     font-size: 2rem;
-    padding: 0 185px 30px;
+    padding-top:20px;
+    padding-bottom:20px;
 }
 
+
 .Options {
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 30px
-    /* padding-right: 185px; */
+    /* padding-right: 185px */
+    
 }
 
 .Option {
@@ -102,7 +109,6 @@
 
 .Container {
     padding-right: 30px;
-    /* margin-left: 20px */
 }
 
 .Container div {
@@ -139,42 +145,31 @@
 
 @media (max-Width: 1200px) {
     .ZarinLink {
-        width: 900px;
+        width: 940px;
+    }
+    .ZarinLinkText {
         padding: 60px 21px 120px;
     }
     .ZarinLinkPic img {
         width: 430px;
     }
-    .Title h2 {
-        padding-right: 125px;
+    article {
+        width:940px;
     }
-    .Title {
-        /* margin-right: 50px; */
-        width: 900px
-    }
+    
     .Options {
         grid-template-columns: 1fr 1fr;
-        width: 80%;
-        padding-right: 100px;
-        /* margin-right: 60px;
-        margin-left: 60px; */
-        /* padding: 0 120px 0; */
+        width: 90%;
     }
     .Option {
         width:100%;
-        border-left: none;
-        border-bottom: none;
-        /* padding-right: 100px */
+        border: none;
     }
-    /* .Option p {
-        width: 60%
-    } */
 }
 
 @media (max-Width: 990px) {
     .ZarinLink{
         width: auto;
-        /* margin: 20px 40px; */
         margin-left: 35px;
         margin-right:35px;
     }
@@ -185,29 +180,70 @@
     .ZarinLinkPic {
         display: none;
     }
+    article{
+        width: auto;
+        /* margin: 0 40px */
+        margin-left: 35px;
+        margin-right:35px;
+    }
     .Title h2 {
-        padding: 0 45px 30px;
+        padding: 0 25px 30px;
     }
     .Options {
         grid-template-columns: 1fr 1fr;
-        width: 70%;
-        padding: 20px 15px 0;
+        width: auto;
+        /* padding: 20px 45px 0; */
     }
-    #OptionTwo, #OptionEight,
-    #OptionFour, #OptionSix {
-        padding-right: 70px
+
+    .Container p {
+        width: 80%;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .Container h4 {
+        font-size: 22px;
     }
 }
 
 @media (max-Width: 768px) {
+    main{
+        width: auto;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
     .ZarinLink {
         margin-right: 10px;
         margin-left: 10px;
     }
+    article {
+        width: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .Container p {
+        width: 80%;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .Container h4 {
+        font-size: 19px;
+    }
 }
 
 @media (max-Width: 575px) {
-    .ZarinLink {
-
+    main{
+        padding-right: 5px;
+        padding-left: 5px;
     }
+    article{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .Options {
+        grid-template-columns: 1fr;
+    }
+    .Title h2 {
+        font-size: 24px
+    }
+
 }

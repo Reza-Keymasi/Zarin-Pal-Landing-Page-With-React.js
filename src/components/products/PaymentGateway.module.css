@@ -1,15 +1,14 @@
-main{
-    margin: 0 80px 0
-}
-
 .PaymentGateway {
-    width: 1050px;
-    padding: 124px 60px 80px;
+    width: 1170px;
     background-color: #f1f5fe;
     border-radius: 20px;
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
+}
+
+.PaymentGatewayText {
+    padding: 124px 60px 80px;
 }
 
 .PaymentGatewayText h1 {
@@ -80,6 +79,7 @@ main{
 
 .Title {
     width: 35%;
+    padding: 0 35px 20px 0;
     /* margin-right: 30px; */
 
 }
@@ -87,7 +87,7 @@ main{
 .Title h2 {
     font-size: 2rem;
     font-family: YekanBakhHeavy;
-    padding: 0 0 20px;
+    
 }
 
 .Advantages {
@@ -191,12 +191,13 @@ main{
 
 .TitleTwo {
     width: 35%;
+    padding-right: 20px
 }
 
 .TitleTwo h2 {
     font-size: 2rem;
     font-family: YekanBakhHeavy;
-    padding: 0 0 20px;
+    padding: 40px 0 20px;
 }
 
 .Pic {
@@ -221,11 +222,11 @@ main{
 
 @media (max-width: 1200px) {
     main{
-        margin: 0 25px 0
+        margin: 0 25px 0;
     }
     .PaymentGateway {
         width: 940px;
-        /* padding: 60px 0px 60px; */
+        padding: 60px 0px 60px;
     }
     .PaymentGatewayImage img {
         width: 430px;
@@ -255,7 +256,8 @@ main{
 
     .Title, .TitleTwo {
         width: 100%;
-        margin: auto;
+        padding-right: 5px
+        /* margin: auto; */
         /* margin-top: 40px; */
     }
     .Title h2, .TitleTwo h2 {
@@ -269,8 +271,7 @@ main{
         width: 330px;
     }
     .Logo {
-        margin-right: 23px;
-        
+        margin-right: 23px;   
     }
 }
 
@@ -318,11 +319,11 @@ main{
 
 @media (max-width: 768px) {
     main{
-        margin: 0 20px 0
+        /* margin: 0 20px 0 */
     }
     .PaymentGateway {
-        margin-left: 8px;
-        margin-right: 8px;
+        /* margin-left: 8px;
+        margin-right: 8px; */  
     }
     .PaymentGateway p, h1 {
         padding: 0 0px 0
@@ -361,13 +362,9 @@ main{
 }
 
 @media (max-width: 575px) {
-    main{
-        /* padding: 0 1px 0; */
-        margin: 0 px 0
-    }
     .PaymentGateway {
-        padding: 80px ;
-        }
+        padding: 80px;
+    }
     .PaymentGatewayText h1 {
         font-size: 1.2rem;
     }

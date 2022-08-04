@@ -30,8 +30,8 @@ const Navbar = () => {
                 <li  onClick={() => setClose(prevState => !prevState)}
                     className={styles.MoreMenu} id={styles.ShowProductMenu}>
                     <div>
-                        <a 
-                            href="/#">محصولات
+                        <a>
+                            محصولات
                         </a>
                         
                         <img src={down} alt="down-arrow" />
@@ -53,10 +53,10 @@ const Navbar = () => {
                                 <p>لینک‌پرداخت‌در‌شبکه‌های‌اجتماعی</p>
                             </Link>
 
-                            <a href="/#">
+                            <Link to="/zarinplus">
                                 <p>زرین‌پلاس</p>
                                 <p>ابزار‌هوشمند‌سوددهی</p>
-                            </a>
+                            </Link>
 
                         </div>
                         <div>
@@ -90,8 +90,8 @@ const Navbar = () => {
 
                 <li onClick={() => setCloseMoreMenu(prevState => !prevState)}
                     className={styles.MoreMenu} id={styles.ShowMoreMenu}>
-                    <a
-                     href="/#">بیش‌تر
+                    <a>
+                        بیش‌تر
                     </a>
 
                     <img src={down} alt="down-arrow" />
