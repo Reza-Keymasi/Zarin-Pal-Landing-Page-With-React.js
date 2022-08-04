@@ -44,7 +44,7 @@ const ZarinLink = () => {
                         <img src={Zarinlink} alt="zarin-link" />
                     </div>
                 </div>
-                    <div className={styles.GoDown}>
+                <div className={styles.GoDown}>
                     <div></div>
                     <img src={DownArrow} alt="down-arrow" />
                 </div>
