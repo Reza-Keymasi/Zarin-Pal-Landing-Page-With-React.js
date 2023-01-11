@@ -7,7 +7,7 @@ import DownArrow from "../../assets/images/down-arrow-svgrepo-com.svg";
 
 const Banner = () => {
     return (
-        <main>
+        <main className={styles.BannerMain}>
             <div className={styles.Banner}>
                 <div className={styles.BannerText}>
                     <h3>بیش‌از ۱۲ سال</h3>

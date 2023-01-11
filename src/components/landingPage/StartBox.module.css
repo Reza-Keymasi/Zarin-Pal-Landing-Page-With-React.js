@@ -1,7 +1,7 @@
 .StartBox {
     width: 1170px;
     height: 220px;
-    margin: auto;
+    margin: 20px auto;
     margin-top: 50px;
     border: 1px solid silver;
     border-radius: 20px;
@@ -45,21 +45,21 @@
 
 @media (max-width: 990px) {
     .StartBox {
-        margin: 0 38px;
-        width: calc(100% - 76px)
+        margin: 0 10px;
+        width: calc(100% - 20px)
     }
 }
 
 @media (max-width: 768px) {
     .StartBox {
-        margin: 0 8px;
-        width: calc(100% - 16px);
+        width:auto
     }
 }
 
 @media (max-width: 575px) {
     .StartBox {
         height: 180px;
+        width:auto
     }
     .StratBox h4 {
         font-size: 1.2rem;

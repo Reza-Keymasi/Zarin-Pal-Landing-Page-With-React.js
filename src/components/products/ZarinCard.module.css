@@ -1,0 +1,450 @@
+.ZarinCard {
+    width: 1170px;
+    display: flex;
+    margin: 20px auto;
+    background-color: #fbf6f1;
+    border:none;
+    border-radius: 20px;
+}
+
+
+.ZarinCardText {
+    padding: 140px 40px 80px;
+}
+
+.ZarinCardText h3 {
+    color: #303030;
+    font-family: YekanBakhHeavy;
+    text-align: right;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.ZarinCardText h1 {
+    position: relative;
+    margin: 20px 0 20px;
+    line-height: 43px;
+    font-size: 32px;
+}
+
+.ZarinCardText p {
+    font-size: 16px;
+    font-family: YekanBakhMedium;
+    color: #303030;
+    line-height: 40px;
+    text-align: justify;
+}
+
+.ZarinCardButton {
+    margin-top: 60px;
+}
+
+.ZarinCardButton a {
+    font-size: 1rem;
+    font-family: YekanBakhBold;
+    color: #000;
+    background-color: #ffd900;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.ZarinCardImage img {
+    width: 410px;
+    padding: 200px 20px 0 80px
+}
+
+.GoDown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 58px;
+}
+
+.GoDown div {
+    background-image: url(../../assets/images/arrowbottom.svg);
+    width: 164px;
+    height: 78px;
+}
+
+.GoDown img {
+    width: 15px;
+    position: relative;
+    top: -60px;
+}
+
+/* Article */
+
+.ZarinCardArticle {
+    width: 1210px;
+    margin: 20px auto;
+}
+
+.ZarinCardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Data {
+    padding: 30px 40px;
+    border-left: solid 1px #e0e4e7;
+    border-bottom: solid 1px #e0e4e7;
+    justify-content: center
+}
+
+
+.Data div {
+    display: flex;
+    align-items: center;
+}
+
+
+.Data p {
+    font-family: YekanBakhMedium;
+    line-height: 36px;
+    text-align: right;
+    white-space: break-spaces;
+    font-size: 16px;
+    margin-top: 21px;
+    color:#303030;
+    min-height: 134px;
+}
+
+
+.Data div h3 {
+    padding-right: 20px;
+    font-size: 24px;
+}
+
+
+.Data img {
+    width: 60px;
+    height: 60px
+}
+
+#Three, #Six {
+    border-left: none
+}
+#Four, #Five, #Six {
+    border-bottom: none
+}
+
+/* Section */
+
+.ZarinCardSection {
+    width: 1170px;
+    height: 380px;
+    background-color: #fbf6f1;
+    display: flex;
+    margin: 50px auto 50px;
+    border-radius: 20px
+}
+
+
+.ZarinCardTariff {
+    padding: 95px 60px 27px 0;
+}
+
+.ZarinCardTariff h3 {
+    color: #303030;
+    font-weight: 900;
+    font-family: YekanBakhHeavy;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: right;
+}
+
+.ZarinCardTariff p {
+    width: 600px;
+    font-family: YekanBakhMedium;
+    font-size: 16px;
+    padding-bottom: 15px;
+    text-align: justify;
+    line-height: 40px;
+}
+
+
+.ZarinCardLogo img {
+    width: 570px;
+    height:380px;
+    position: relative;
+    margin-right: -15px;
+}
+
+.ZarinCardLink {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.ZarinCardLink a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: iranyekanwebmedium;
+    color: #28457b;
+    background-color: rgba(232, 239, 254, 0.7);
+    padding: 6px 14px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ZarinCardLink img {
+    width: 18px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.ZarinCardLastText {
+    width: 1170px;
+    margin: 20px auto;
+}
+
+.ZarinCardLastText h2 {
+    font-family: YekanBakhHeavy;
+    font-size: 32px;
+}
+
+.ZarinCardLastText p {
+    line-height: 40px;
+    font-family: YekanBakhMedium;
+    font-size:15px;
+    padding: 20px 0 20px
+}
+
+.ZarinCardProdction {
+    width: 1170px;
+    background-color: #f1f5fe;
+    margin: 20px auto;
+    padding: 26px 0;
+    border-radius: 20px
+}
+
+.ZarinCardProdction p {
+    font-size: 28px;
+    font-family: yekanBakhHeavy;
+    text-align-last: center;
+    color: #303030;
+}
+.ZarinCardProdction span {
+    color:#28457b;
+    font-size: 48px;
+    padding: 0 37px
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .ZarinCard {
+        width: 940px;
+    }
+    .ZarinCardText {
+        padding: 80px 40px 110px;
+    }
+    .ZarinCardText h1 {
+        padding: 0
+    }
+    .ZarinCardImage img {
+        padding-top: 200px;
+        width: 380px
+    }
+    .ZarinCardArticle{
+        width: 1000px;
+    }
+    .ZarinCardContainer {
+        grid-template-columns: 1fr 1fr;
+        width: auto;
+    }
+    .Data {
+        border: none;
+    }
+    .Data p {
+        width: 75%;
+        text-align: justify;
+    }
+    .ZarinCardSection {
+        width: 940px
+    }
+    .ZarinCardTariff {
+        padding: 45px 60px 27px 0;
+    }
+    .ZarinCardTariff p {
+        width: auto
+    }
+    .ZarinCardLogo img {
+        width: 420px;
+        height:400px;
+        padding-right: 10px;
+    }
+    .ZarinCardLastText {
+        width: 940px;
+    }
+    .ZarinCardProdction {
+        width: 940px
+    }
+    .ZarinCardProdction span {
+        font-size: 42px
+    }
+}
+
+@media (max-width: 990px) {
+    .ZarinCard {
+        margin: 20px 10px;
+        width: calc(100% - 20px)
+    }
+    .ZarinCardText {
+        padding: 150px 80px 80px;
+    }
+    .ZarinCardImage {
+        display: none;
+    }
+    .ZarinCardArticle {
+        width: auto;
+    }
+    .ZarinCardContainer {
+        grid-template-columns: 1fr 1fr;
+        width: auto;
+    }
+    .Data {
+        padding-right: 20px
+    }
+    .ZarinCardLogo {
+        display: none;
+    }
+    .ZarinCardSection {
+        margin: 20px 10px;
+        width: calc(100% - 20px);
+        height: 350px;
+    }
+    .ZarinCardTariff {
+        padding: 35px 60px 27px 60px;
+    }
+    .ZarinCardLastText {
+        margin: 50px 10px;
+        width: calc(100% - 20px);
+    }
+    .ZarinCardLastText h2 {
+        font-size: 28px;
+    }
+    
+    .ZarinCardLastText p {
+        padding: 20px 0 20px;
+        font-size: 15px
+    }
+    .ZarinCardProdction {
+        margin: 50px 10px;
+        width: calc(100% - 20px);
+    }
+    .ZarinCardProdction span {
+        font-size: 28px;
+        padding: 0 17px;
+    }
+    .ZarinCardProdction p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ZarinCard {
+        width:auto
+    }
+    .ZarinCardText {
+        padding: 100px 50px 80px;
+    }
+    .ZarinCardText h3 {
+        font-size: 22px;
+    }
+    .ZarinCardText h1 {
+        font-size: 26px;
+    }
+    .ZarinCardText p {
+        font-size: 14px;
+    }
+    .Data {
+        border-bottom: 1px solid #e0e4e7;
+        padding: 0px;
+        margin: 20px 40px 20px 0
+    }
+    #Four, #Five, #Six {
+        border-bottom: 1px solid #e0e4e7;
+    }
+    .Data div h3 {
+        font-size: 17px;
+        width: auto;
+    }
+    .Data p {
+        width: 90%
+    }
+    .ZarinCardSection {
+        height: 400px;
+    }
+    .ZarinCardTariff p {
+        font-size: 14px;
+        text-align: right;
+    }
+    .ZarinCardLastText h2 {
+        font-size: 23px;
+    }
+    .ZarinCardProdction {
+        width: auto
+    }
+    .ZarinCardProdction span {
+        font-size: 24px;
+        padding: 0 17px;
+    }
+    .ZarinCardProdction p {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 575px) {
+    .ZarinCard {
+        margin: 20px 20px;
+        width: calc(100% - 40px)
+    }
+    .ZarinCardContainer {
+        grid-template-columns: 1fr;
+        width: auto;
+    }
+    .Data {
+        margin: 20px 20px;
+        width: calc(100% - 40px);
+        padding: 0 10px 0 0
+    }
+    .ZarinCardSection {
+        height: 550px;
+        margin: 20px 20px;
+        width: calc(100% - 40px);
+    }
+    .ZarinCardTariff p {
+        text-align: justify;
+    }
+    .ZarinCardLastText h2, p {
+        text-align: center;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .ZarinCard{
+        margin: 30px;
+        width: calc(100% - 30px)
+    }
+    .Data {
+        padding: 0;
+        margin: 60px
+    }
+    .ZarinCardSection {
+        height: 750px;
+        margin: 20px 20px;
+        width: calc(100% - 20px);
+    }
+    .ZarinCardSection p {
+        font-size: 12px
+    }
+}

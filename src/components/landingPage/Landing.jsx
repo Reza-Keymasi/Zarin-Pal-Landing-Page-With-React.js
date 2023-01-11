@@ -1,7 +1,7 @@
 import React from 'react';
 
 // components
-import { Navbar, Banner, Cards, ZarinPalOptions, StartBox, Support, Footer}  from "./Index.jsx"
+import { Banner, Cards, ZarinPalOptions }  from "./Index.jsx"
 
 
 // Images
@@ -25,8 +25,6 @@ const Landing = () => {
 
     return (
         <div>
-
-            <Navbar />
         
             <Banner />
 
@@ -34,11 +32,6 @@ const Landing = () => {
 
             <ZarinPalOptions />
             
-            <StartBox />
-
-            <Support />
-
-            <Footer />
 
             <div style={style}>
                 <img style={ImgStyle} src={Bell} alt="bell" />

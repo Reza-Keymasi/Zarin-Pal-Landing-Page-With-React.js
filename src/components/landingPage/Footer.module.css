@@ -74,7 +74,9 @@ footer .FooterLinks {
 @media (max-width: 990px) {
     footer {
         flex-direction: column;
-        width: calc(100% - 60px);
+        /* width: calc(100% - 60px); */
+        margin: 0 10px;
+        width: calc(100% - 20px)
     }
     footer .FooterLinks {
         width: 100%;

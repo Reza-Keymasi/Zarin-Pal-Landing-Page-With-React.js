@@ -1,0 +1,308 @@
+.ZarinPlus {
+    width: 1170px;
+    background-color: #f1f6fe;
+    border: none;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.ZarinPlusText {
+    padding: 140px 40px 80px;
+}
+
+.ZarinPlusText h3 {
+    color: #303030;
+    font-family: YekanBakhHeavy;
+    text-align: right;
+    font-size: 24px;
+    line-height: 40px;
+}
+.ZarinPlusText h2 {
+    font-family: YekanBakhHeavy;
+    font-size: 2rem;
+}
+
+.ZarinPlusText p {
+    font-size: 16px;
+    font-family: YekanBakhMedium;
+    color: #303030;
+    line-height: 40px;
+    text-align: justify;
+}
+
+.ZarinPlusPic {
+    width: 500px;
+    padding: 100px 40px 80px;
+
+}
+
+.ZarinPlusButton {
+    margin-top: 60px;
+}
+
+.ZarinPlusButton a {
+    font-size: 1rem;
+    font-family: YekanBakhBold;
+    color: #000;
+    background-color: #ffd900;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.GoDown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 58px;
+}
+
+.GoDown div {
+    background-image: url(../../assets/images/arrowbottom.svg);
+    width: 164px;
+    height: 78px;
+}
+
+.GoDown img {
+    width: 15px;
+    position: relative;
+    top: -60px;
+}
+
+.ZarinPlusArticle {
+    width: 1210px;
+    margin: 20px auto;
+}
+
+
+.ZarinPlusArticle h2 {
+    font-family: YekanBakhHeavy;
+    font-size:32px;
+    color: #303030;
+    padding: 13px 20px
+}
+
+
+.Features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Feature {
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.Feature img {
+    width: 60px;
+    height: 60px;
+}
+
+.Feature h3 {
+    width: 65%;
+    font-family: YekanBakhHeavy;
+    padding-right: 20px;
+    font-size: 24px;
+}
+
+.ZarinPlusSection {
+    width: 1170px;
+    height: 380px;
+    background-color: #fbf6f1;
+    display: flex;
+    margin: 50px auto 50px;
+    border-radius: 20px
+}
+
+
+.ZarinPlusPerformance {
+    padding: 35px 60px 27px 0;
+}
+
+.ZarinPlusPerformance h3 {
+    color: #303030;
+    font-weight: 900;
+    font-family: YekanBakhHeavy;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: right;
+
+}
+
+.ZarinPlusPerformance p {
+    width: 600px;
+    font-family: YekanBakhMedium;
+    font-size: 16px;
+    padding-bottom: 20px;
+    text-align: justify;
+    line-height: 40px;
+
+}
+
+
+.ZarinPlusLogo img {
+    width: 570px;
+    height:380px;
+    position: relative;
+    margin-right: -15px;
+}
+
+.ZarinPlusLink {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.ZarinPlusLink a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: iranyekanwebmedium;
+    color: #28457b;
+    background-color: rgba(232, 239, 254, 0.7);
+    padding: 6px 14px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ZarinPlusLink img {
+    width: 18px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .ZarinPlus {
+        width: 940px;
+    }
+    .ZarinPlusText {
+        width: 100%;
+        /* padding: 90px 41px 120px 0; */
+    }
+    .ZarinPlusPic img {
+        width: 400px;
+        padding: 60px 0 0;
+    }
+    .ZarinPlusArticle {
+        width: 1000px
+    }
+    .ZarinPlusArticle h3 {
+        width: 75%;
+        font-size: 22px
+    }
+    .ZarinPlusArticle h2 {
+        font-size: 26px
+    }
+    .ZarinPlusSection {
+        width: 940px;
+        height:auto
+    }
+    .ZarinPlusPerformance p {
+        width: 380px;
+        margin: 20px 0 10px 0;
+        font-size: 14px;
+    }
+    .ZarinPlusLogo img {
+        /* width:460px; */
+        height: 485px;
+        margin-right: -25px;
+    }
+
+}
+
+@media (max-width: 990px) {
+    .ZarinPlusMain {
+        margin: 0 40px;
+        width: calc(100% - 80px)
+    }
+    .ZarinPlus {
+        width: auto;
+        padding-right: 10px;
+    }
+    .ZarinPlusText {
+        width: 85%;
+    }
+    .ZarinPlusPic {
+        display: none;
+    }
+    .ZarinPlusArticle {
+        width: auto;
+    }
+    .ZarinPlusArticle h3 {
+        width: 50%;
+        font-size: 22px
+    }
+    .Features {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 40px;
+        width: calc(100% - 80px)
+    }
+    .ZarinPlusArticle h2 {
+        padding-right: 40px
+    }
+    .ZarinPlusLogo {
+        display: none
+    }
+    .ZarinPlusSection {
+        margin: 50px 40px;
+        width: calc(100% - 80px);
+        height:auto
+    }
+    .ZarinPlusPerformance p {
+        width: 91%;
+        font-size: 16px
+    }
+}
+
+@media (max-width: 768px) {
+    .ZarinPlusMain {
+        width: auto;
+    }
+    .Features {
+        width: auto;
+    }
+    .Feature {
+        width:auto;
+        padding-right: 16px;
+    }
+    .Feature img {
+        width: 80px;
+        height: 80px;
+    }
+    .Feature h3 {
+        font-size: 17px;
+        width: 80%;
+    }
+    .ZarinPlusArticle h2 {
+        padding-right: 16px
+    }
+    .ZarinPlusSection {
+        width: auto;
+        height:auto
+    }
+}
+
+@media (max-width: 575px) {
+    .ZarinPlusMain {
+        width: auto
+    }
+    .Features {
+        grid-template-columns: 1fr;
+    }
+    .ZarinPlusSection {
+        width: auto;
+        height: auto;
+    }
+    .ZarinPlusPerformance {
+        padding-right: 10px;
+    }
+}

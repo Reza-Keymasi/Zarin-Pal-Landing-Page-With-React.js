@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from "./ZarinLink.module.css"
 
-import Navbar from "../landingPage/Navbar.jsx"
 
 // images
 import Zarinlink from "../../assets/images/zarinlink.svg";
@@ -17,9 +16,8 @@ import Order from "../../assets/images/order.svg";
 const ZarinLink = () => {
     return (
         <div>
-            <Navbar />
 
-            <main>
+            <main className={styles.ZarinLinkMain}>
                 <div className={styles.ZarinLink}>
                     <div className={styles.ZarinLinkText}>
                         <h3>
@@ -50,7 +48,7 @@ const ZarinLink = () => {
                 </div>
             </main>
 
-            <article>
+            <article className={styles.ZarinLinkArticle}>
                 <div className={styles.Title}>
                     <h2>
                         ویژگی‌های‌زرین‌لینک

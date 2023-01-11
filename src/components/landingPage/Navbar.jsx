@@ -20,154 +20,154 @@ const Navbar = () => {
 
 
     return (
-        <header>
-        <div>
-            <img className={styles.Logo} src={logo} alt="logo"/>
-        </div>
+        <header className={styles.Header}>
+            <div>
+                <img className={styles.Logo} src={logo} alt="logo"/>
+            </div>
 
-        <nav>
-            <ul className={styles.HeaderUl}>
-                <li  onClick={() => setClose(prevState => !prevState)}
-                    className={styles.MoreMenu} id={styles.ShowProductMenu}>
-                    <div>
-                        <a>
-                            محصولات
-                        </a>
-                        
-                        <img src={down} alt="down-arrow" />
-                    </div>
-
-                        {/* For DropDowns */}
-                    <div className={!close ? styles.ProductMenu : styles.CloseProductMenu}> 
-                    
+            <nav>
+                <ul className={styles.HeaderUl}>
+                    <li  onClick={() => setClose(prevState => !prevState)}
+                        className={styles.MoreMenu} id={styles.ShowProductMenu}>
                         <div>
-
-                            <Link to="/payment-gateway">
-                                <p>درگاه‌پرداخت</p>
-                                <p>مهندسی شده برای فروس بیش‌تر</p>
-                            </Link>
+                            <a>
+                                محصولات
+                            </a>
                             
-
-                            <Link to="/zarinlink">
-                                <p>زرین‌لینک</p>
-                                <p>لینک‌پرداخت‌در‌شبکه‌های‌اجتماعی</p>
-                            </Link>
-
-                            <Link to="/zarinplus">
-                                <p>زرین‌پلاس</p>
-                                <p>ابزار‌هوشمند‌سوددهی</p>
-                            </Link>
-
-                        </div>
-                        <div>
-
-                            <a href="/#">
-                                <p>زرین‌کارت</p>
-                                <p>طلایی‌ترین‌کارت‌بانکی</p>
-                            </a>
-
-                            <a href="/#">
-                                <p>تسهیم</p>
-                                <p>درگاه‌پرداخت‌اشتراکی</p>
-                            </a>
-
+                            <img src={down} alt="down-arrow" />
                         </div>
 
-                    </div>
-                </li>
-                    
-                <li>
-                    <a href="/#">تعرفه‌ها</a>
-                </li>
-                    
-                <li>
-                <a href="/#">توسعه‌دهندگان</a>
-                </li>
+                            {/* For DropDowns */}
+                        <div className={!close ? styles.ProductMenu : styles.CloseProductMenu}> 
+                        
+                            <div>
 
-                <li>
-                    <a href="/#">تماس‌با‌ما</a>
-                </li>
+                                <Link to="/payment-gateway">
+                                    <p>درگاه‌پرداخت</p>
+                                    <p>مهندسی شده‌برای فروش بیش‌تر</p>
+                                </Link>
+                                
 
-                <li onClick={() => setCloseMoreMenu(prevState => !prevState)}
-                    className={styles.MoreMenu} id={styles.ShowMoreMenu}>
-                    <a>
-                        بیش‌تر
-                    </a>
+                                <Link to="/zarinlink">
+                                    <p>زرین‌لینک</p>
+                                    <p>لینک‌پرداخت‌در‌شبکه‌های‌اجتماعی</p>
+                                </Link>
 
-                    <img src={down} alt="down-arrow" />
+                                <Link to="/zarinplus">
+                                    <p>زرین‌پلاس</p>
+                                    <p>ابزار‌هوشمند‌سوددهی</p>
+                                </Link>
 
-                    <ul className={!closeMoreMenu ? styles.ShowMoreMenuList : styles.CloseMoreMenu}>
+                            </div>
+                            <div>
+
+                                <Link to="/zarincard">
+                                    <p>زرین‌کارت</p>
+                                    <p>طلایی‌ترین‌کارت‌بانکی</p>
+                                </Link>
+
+                                <Link to="/#">
+                                    <p>تسهیم</p>
+                                    <p>درگاه‌پرداخت‌اشتراکی</p>
+                                </Link>
+
+                            </div>
+
+                        </div>
+                    </li>
+                        
+                    <li>
+                        <a href="/#">تعرفه‌ها</a>
+                    </li>
+                        
+                    <li>
+                    <a href="/#">توسعه‌دهندگان</a>
+                    </li>
+
+                    <li>
+                        <a href="/#">تماس‌با‌ما</a>
+                    </li>
+
+                    <li onClick={() => setCloseMoreMenu(prevState => !prevState)}
+                        className={styles.MoreMenu} id={styles.ShowMoreMenu}>
+                        <a>
+                            بیش‌تر
+                        </a>
+
+                        <img src={down} alt="down-arrow" />
+
+                        <ul className={!closeMoreMenu ? styles.ShowMoreMenuList : styles.CloseMoreMenu}>
+                            <li>
+                                <a href="/#">وبلاگ</a>
+                            </li>
+                            <li>
+                                <a href="/#">دریافت‌شماره‌شبا</a>
+                            </li>
+                            <li>
+                                <a href="/#">سوالات‌متداول</a>
+                            </li>
+                            <li>
+                                <a href="/#">اپلیکیشن</a>
+                            </li>
+                            <li>
+                                <a href="/#">زرین‌بین</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a href="/#">زرین‌پال‌من</a>
+                    </li>
+                </ul>
+            </nav>
+
+            {/* Hamburger Menu */}
+            <div className={styles.HamburgerIcon}>
+                <img
+                src={Hamburger}
+                alt="hamburger"
+                onClick={() => setOpen(false)}
+                />
+            </div>
+
+        
+            <div className={!open ? styles.HamburgerMenu : styles.CloseHamburgerMenu}>
+
+                <div className={styles.CrossIcon}>
+                    <img src={Cross} alt="cross-icon"
+                    onClick={() => setOpen(true)}
+                    />
+                </div>
+
+
+                <div className={styles.HamburgerItems}>    
+                    <ul>
                         <li>
-                            <a href="/#">وبلاگ</a>
-                        </li>
-                        <li>
-                            <a href="/#">دریافت‌شماره‌شبا</a>
-                        </li>
-                        <li>
-                            <a href="/#">سوالات‌متداول</a>
+                            <a href="/#">تعرفه‌ها</a>
                         </li>
                         <li>
                             <a href="/#">اپلیکیشن</a>
                         </li>
+                        <div></div>
                         <li>
-                            <a href="/#">زرین‌بین</a>
+                            <a href="/#">سوالات متداول</a>
+                        </li>
+                        <li>
+                            <a href="/#">محصولات</a>
+                        </li>
+                        <li>
+                            <a href="/#">تماس با ما</a>
                         </li>
                     </ul>
 
-                </li>
-
-                <li>
+                <div className={styles.MoreItems}>
                     <a href="/#">زرین‌پال‌من</a>
-                </li>
-            </ul>
-        </nav>
+                    <img src={LeftArrow} alt="leftarrow" />
+                </div>
 
-        {/* Hamburger Menu */}
-        <div>
-            <img className={styles.HamburgerIcon}
-            src={Hamburger}
-            alt="hamburger"
-            onClick={() => setOpen(false)}
-            />
-        </div>
-
-       
-        <div className={!open ? styles.HamburgerMenu : styles.CloseHamburgerMenu}>
-
-            <div className={styles.CrossIcon}>
-                <img src={Cross} alt="cross-icon"
-                onClick={() => setOpen(true)}
-                />
+                </div>
             </div>
-
-
-            <div className={styles.HamburgerItems}>    
-                <ul>
-                    <li>
-                        <a href="/#">تعرفه‌ها</a>
-                    </li>
-                    <li>
-                        <a href="/#">اپلیکیشن</a>
-                    </li>
-                    <div></div>
-                    <li>
-                        <a href="/#">سوالات متداول</a>
-                    </li>
-                    <li>
-                        <a href="/#">محصولات</a>
-                    </li>
-                    <li>
-                        <a href="/#">تماس با ما</a>
-                    </li>
-                </ul>
-
-            <div className={styles.MoreItems}>
-                <a href="/#">زرین‌پال‌من</a>
-                <img src={LeftArrow} alt="leftarrow" />
-            </div>
-
-            </div>
-        </div>
 
         </header>
     );

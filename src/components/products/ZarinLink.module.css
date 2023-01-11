@@ -8,7 +8,7 @@
 }
 
 .ZarinLinkText {
-    padding: 124px 60px 80px;
+    padding: 100px 40px 80px;
 }
 
 .ZarinLinkText h3 {
@@ -67,7 +67,7 @@
     top: -60px;
 }
 
-article {
+.ZarinLinkArticle {
     width: 1170px;
     display: flex;
     flex-direction: column;
@@ -86,9 +86,7 @@ article {
 
 .Options {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* padding-right: 185px */
-    
+    grid-template-columns: 1fr 1fr 1fr;    
 }
 
 .Option {
@@ -146,14 +144,15 @@ article {
 @media (max-Width: 1200px) {
     .ZarinLink {
         width: 940px;
+        overflow-x: hidden;
     }
     .ZarinLinkText {
-        padding: 60px 21px 120px;
+        padding: 60px 31px 120px;
     }
     .ZarinLinkPic img {
         width: 430px;
     }
-    article {
+    .ZarinLinkArticle {
         width:940px;
     }
     
@@ -168,10 +167,13 @@ article {
 }
 
 @media (max-Width: 990px) {
+    .ZarinLinkMain {
+        margin: 0 10px;
+        width: calc(100% - 20px)
+    }
     .ZarinLink{
         width: auto;
-        margin-left: 35px;
-        margin-right:35px;
+        padding-right: 10px;
     }
     .ZarinLinkText {
         width: 98%;
@@ -180,11 +182,12 @@ article {
     .ZarinLinkPic {
         display: none;
     }
-    article{
-        width: auto;
-        /* margin: 0 40px */
+    .ZarinLinkArticle{
+        /* width: auto;
         margin-left: 35px;
-        margin-right:35px;
+        margin-right:35px; */
+        margin: 0 10px;
+        width: calc(100% - 20px)
     }
     .Title h2 {
         padding: 0 25px 30px;
@@ -192,8 +195,7 @@ article {
     .Options {
         grid-template-columns: 1fr 1fr;
         width: auto;
-        /* padding: 20px 45px 0; */
-    }
+        }
 
     .Container p {
         width: 80%;
@@ -206,16 +208,15 @@ article {
 }
 
 @media (max-Width: 768px) {
-    main{
-        width: auto;
+    .ZarinLinkMain{
+        /* width: auto;
         padding-right: 20px;
-        padding-left: 20px;
+        padding-left: 20px; */
     }
     .ZarinLink {
-        margin-right: 10px;
-        margin-left: 10px;
+        width:auto
     }
-    article {
+    .ZarinLinkArticle {
         width: auto;
         padding-right: 15px;
         padding-left: 15px;
@@ -231,11 +232,10 @@ article {
 }
 
 @media (max-Width: 575px) {
-    main{
-        padding-right: 5px;
-        padding-left: 5px;
+    .ZarinLink {
+        width: auto
     }
-    article{
+    .ZarinLinkArticle{
         padding-right: 5px;
         padding-left: 5px;
     }

@@ -1,10 +1,10 @@
-header {
+.Header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 1170px;
-    margin: auto;
-    padding: 21px 0 7px;
+    margin: 20px auto;
+    padding: 10px 0 7px;
     background-color: rgba(255, 255, 255, 0.72);
     position: sticky;
     top: 0;
@@ -21,7 +21,6 @@ header {
 .HeaderUl {
     width: 100%;
     display: flex;
-    /* margin-right: 350px; */
     list-style: none;
 }
 
@@ -41,7 +40,7 @@ header {
     background-color: rgba(232, 239, 254, 0.6);
     border-radius: 20px;
     padding: 10px 27px;
-    margin-right: 20px;
+    margin-right: 50px;
     font-family: YekanBakhBold;
 }
 
@@ -131,6 +130,12 @@ header {
     font-size: 0.85rem;
 }
 
+.MoreItems Link {
+    text-decoration: none;
+    color: #28457b;
+    font-size: 0.85rem;
+}
+
 #ShowMoreMenu {
     position: relative;
 }
@@ -159,7 +164,6 @@ header {
     padding: 10px 20px;
     font-size: 0.8rem;
     color: black;
-    /* display: none; */
 }
 
 #ShowMoreMenu li:hover {
@@ -205,7 +209,6 @@ header {
     border-radius: 5px;
 }
 
-/* Animations */
 
 @keyframes fadeInDown {
     0% {
@@ -214,7 +217,7 @@ header {
     }
     100% {
         opacity: 1;
-        transform: translateY(0)
+        transform: translateY(0);
     }
 }
 
@@ -229,22 +232,24 @@ header {
 
 
 
-/* Media Queries */
+
 
 @media (max-width: 1200px) {
-    header {
+    .Header {
         width: 940px;
     }
     .HeaderUl {
-        margin-right: 120px;
+        margin: 0 10px;
+        width: calc(100% - 20px)
     }
 }
 
-@media ( max-width:990px ) {
-    header {
-        width: auto; 
+ @media ( max-width:990px ) {
+    .Header {
         padding: 20px 60px;
+        width: auto
     }
+
     .HeaderUl li:last-child {
         display:none;
     }
@@ -256,16 +261,23 @@ header {
     }
 }
 
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .HeaderUl {
         display: none;
     }
-    .header {
+    .Header {
         width: auto;
         padding: 10px 8px;
     }
     .HamburgerIcon {
-        display: block
+        display: block;
+        margin-left: 40px;
     }
 }
 
+@media (max-width: 575px) {
+    .Header {
+        width: auto;
+        margin: 0;
+    }
+} 

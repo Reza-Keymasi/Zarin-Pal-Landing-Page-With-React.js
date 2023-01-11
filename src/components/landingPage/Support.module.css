@@ -45,7 +45,7 @@
 
 @media (max-width: 990px) {
     .Support {
-        width: calc(100% - 120px)
+        width: calc(100% - 70px)
     }
     .SupportRequest .SupportNumber {
         font-size: 1.2rem

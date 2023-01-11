@@ -1,9 +1,6 @@
 import React from 'react';
 import styles from "./PaymentGateway.module.css";
 
-// components
-import { Navbar } from "../landingPage/Index.jsx"
-
 
 // images
 import Pay from "../../assets/images/pay.svg";
@@ -25,31 +22,30 @@ import Games from "../../assets/images/games.svg";
 const PaymentGateway = () => {
     return (
         <div>      
-            <Navbar />
 
-            <main>
-            <div className={styles.PaymentGateway}>
-                <div className={styles.PaymentGatewayText}>
-                    <h1>درگاه پرداخت اینترنتی   IPG</h1>
-                    <h1>مهندسی شده برای رشد و فروش بیش‌تر</h1>
-                    <p>
-                        <span>درگاه پرداخت زرین‌پال، به واسطه‌ی قابلیت مسیردهی هوشمند، با اتصالِ همزمان به درگاه‌های متنوع و معتبر شاپرکی(</span>
-                        <span>PSP</span>
-                        <span>)، کاربران را به سریع‌ترین و مطمئن‌ترین درگاه بانکی منتقل می‌کند و باعث افزایش درصد تراکنش‌های موفق می‌شود.</span>
-                    </p>
-                    <div className={styles.PaymentGatewayButtons}>
-                        <a className={styles.PaymentGatewayLink} href="/#">ساخت درگاه پرداخت</a>
+            <main className={styles.PaymentGatewayMain}>
+                <div className={styles.PaymentGateway}>
+                    <div className={styles.PaymentGatewayText}>
+                        <h1>درگاه پرداخت اینترنتی   IPG</h1>
+                        <h1>مهندسی شده برای رشد و فروش بیش‌تر</h1>
+                        <p>
+                            <span>درگاه پرداخت زرین‌پال، به واسطه‌ی قابلیت مسیردهی هوشمند، با اتصالِ همزمان به درگاه‌های متنوع و معتبر شاپرکی(</span>
+                            <span>PSP</span>
+                            <span>)، کاربران را به سریع‌ترین و مطمئن‌ترین درگاه بانکی منتقل می‌کند و باعث افزایش درصد تراکنش‌های موفق می‌شود.</span>
+                        </p>
+                        <div className={styles.PaymentGatewayButtons}>
+                            <a className={styles.PaymentGatewayLink} href="/#">ساخت درگاه پرداخت</a>
+                        </div>
+                    </div>
+
+                    <div className={styles.PaymentGatewayImage}>
+                        <img src={Pay} alt="home" />
                     </div>
                 </div>
-
-                <div className={styles.PaymentGatewayImage}>
-                    <img src={Pay} alt="home" />
+                <div className={styles.GoDown}>
+                    <div></div>
+                    <img src={DownArrow} alt="down-arrow" />
                 </div>
-            </div>
-            <div className={styles.GoDown}>
-                <div></div>
-                <img src={DownArrow} alt="down-arrow" />
-            </div>
             </main>
 
             <article className={styles.Attributes}>
